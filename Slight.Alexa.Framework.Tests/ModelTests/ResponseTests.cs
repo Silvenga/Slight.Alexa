@@ -2,6 +2,7 @@
 {
     using System.Collections.Generic;
     using System.IO;
+    using System.Text.RegularExpressions;
 
     using Newtonsoft.Json;
     using Newtonsoft.Json.Serialization;
@@ -55,6 +56,9 @@
 
             const string example = "Response.json";
             var workingJson = File.ReadAllText(Path.Combine(ExamplesPath, example));
+
+            workingJson = Regex.Replace(workingJson, @"\s", "");
+            json = Regex.Replace(json, @"\s", "");
 
             Assert.Equal(workingJson, json);
         }

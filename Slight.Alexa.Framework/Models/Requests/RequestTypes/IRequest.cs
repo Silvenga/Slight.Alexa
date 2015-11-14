@@ -6,7 +6,7 @@ namespace Slight.Alexa.Framework.Models.Requests.RequestTypes
     {
         /// <summary>
         /// Describes the request type with the value as:
-        /// LaunchRequest, IntentRequest, or SessionEndedRequest
+        /// ILaunchRequest, INtentRequest, or ISessionEndedRequest
         /// </summary>
         string Type { get; set; }
 

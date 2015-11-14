@@ -5,13 +5,13 @@ namespace Slight.Alexa.Framework.Models.Requests
     public class Intent
     {
         /// <summary>
-        /// A string that represents the name of the slot.
+        /// A string representing the name of the intent.
         /// </summary>
         public string Name { get; set; }
 
         /// <summary>
-        /// A string that represents the value of the slot. The value is not required.
-        /// Note that AMAZON.LITERAL slot values sent to your service are always in all lower case.
+        /// A map of key-value pairs that further describes what
+        /// the user meant based on a predefined intent schema.
         /// </summary>
         public Dictionary<string, Slot> Slots { get; set; }
     }

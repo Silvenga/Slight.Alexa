@@ -46,11 +46,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\Requests\Application.cs" />
-    <Compile Include="Models\Requests\RequestTypes\IntentRequest.cs" />
-    <Compile Include="Models\Requests\RequestTypes\LaunchRequest.cs" />
+    <Compile Include="Models\Types\BuiltInIntent.cs" />
+    <Compile Include="Models\Types\BuiltInSlotType.cs" />
+    <Compile Include="Models\Requests\RequestTypes\IIntentRequest.cs" />
+    <Compile Include="Models\Requests\RequestTypes\ILaunchRequest.cs" />
     <Compile Include="Models\Requests\Intent.cs" />
     <Compile Include="Models\Requests\RequestTypes\IRequest.cs" />
-    <Compile Include="Models\Requests\RequestTypes\SessionEndedRequest.cs" />
+    <Compile Include="Models\Requests\RequestTypes\RequestBundle.cs" />
+    <Compile Include="Models\Requests\RequestTypes\ISessionEndedRequest.cs" />
     <Compile Include="Models\Requests\Slot.cs" />
     <Compile Include="Models\Requests\Session.cs" />
     <Compile Include="Models\Requests\SkillRequest.cs" />

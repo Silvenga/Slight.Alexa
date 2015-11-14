@@ -18,9 +18,11 @@
         {
             const string example = "IntentRequest.json";
             var json = File.ReadAllText(Path.Combine(ExamplesPath, example));
-            var convertedObj = JsonConvert.DeserializeObject<SkillRequest<IntentRequest>>(json);
+            var convertedObj = JsonConvert.DeserializeObject<SkillRequest>(json);
 
             Assert.NotNull(convertedObj);
+            Assert.Equal(typeof(IIntentRequest), convertedObj.Request.GetRequestType());
+            Assert.Equal(typeof(IIntentRequest), convertedObj.GetRequestType());
         }
 
         [Fact]
@@ -28,9 +30,11 @@
         {
             const string example = "LaunchRequest.json";
             var json = File.ReadAllText(Path.Combine(ExamplesPath, example));
-            var convertedObj = JsonConvert.DeserializeObject<SkillRequest<LaunchRequest>>(json);
+            var convertedObj = JsonConvert.DeserializeObject<SkillRequest>(json);
 
             Assert.NotNull(convertedObj);
+            Assert.Equal(typeof(ILaunchRequest), convertedObj.Request.GetRequestType());
+            Assert.Equal(typeof(ILaunchRequest), convertedObj.GetRequestType());
         }
 
         [Fact]
@@ -38,9 +42,11 @@
         {
             const string example = "SessionEndedRequest.json";
             var json = File.ReadAllText(Path.Combine(ExamplesPath, example));
-            var convertedObj = JsonConvert.DeserializeObject<SkillRequest<SessionEndedRequest>>(json);
+            var convertedObj = JsonConvert.DeserializeObject<SkillRequest>(json);
 
             Assert.NotNull(convertedObj);
+            Assert.Equal(typeof(ISessionEndedRequest), convertedObj.Request.GetRequestType());
+            Assert.Equal(typeof(ISessionEndedRequest), convertedObj.GetRequestType());
         }
 
         [Fact]
@@ -48,9 +54,11 @@
         {
             const string example = "SessionEndedRequest.json";
             var json = File.ReadAllText(Path.Combine(ExamplesPath, example));
-            var convertedObj = JsonConvert.DeserializeObject<SkillRequest<SessionEndedRequest>>(json);
+            var convertedObj = JsonConvert.DeserializeObject<SkillRequest>(json);
 
             Assert.NotNull(convertedObj);
+            Assert.Equal(typeof(ISessionEndedRequest), convertedObj.Request.GetRequestType());
+            Assert.Equal(typeof(ISessionEndedRequest), convertedObj.GetRequestType());
         }
     }
 }

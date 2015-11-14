@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Slight.Alexa</id>
+    <version>$version$</version>
+    <title>Slight.Alexa</title>
+    <authors>Silvenga</authors>
+    <owners>Silvenga</owners>
+    <licenseUrl>https://github.com/Silvenga/Slight.Alexa/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/Silvenga/Slight.Alexa</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+		A set of managed C# models and helpers to integrate Amazon's Alexa skill services into your .Net stack.
+	</description>
+    <releaseNotes>First Release.</releaseNotes>
+    <copyright>Copyright 2015</copyright>
+    <tags>Alaxa Amazon Echo</tags>
+  </metadata>
+</package>

@@ -50,6 +50,18 @@ namespace Slight.Alexa.Framework.Tests.ModelTests
         }
 
         [Fact]
+        public void Can_read_slot_example()
+        {
+            const string example = "GetUtterance.json";
+            var json = File.ReadAllText(Path.Combine(ExamplesPath, example));
+            var convertedObj = JsonConvert.DeserializeObject<SkillRequest>(json);
+
+            var request = Assert.IsAssignableFrom<IIntentRequest>(convertedObj.Request);
+            var slot = request.Intent.Slots["Utterance"];
+            Assert.Equal("how are you", slot.Value);
+        }
+
+        [Fact]
         public void Can_accept_new_versions()
         {
             const string example = "SessionEndedRequest.json";

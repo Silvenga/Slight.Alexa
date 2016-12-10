@@ -1,14 +1,14 @@
-﻿namespace Slight.Alexa.Framework.Tests.ModelTests
+﻿using System.IO;
+
+using Newtonsoft.Json;
+
+using Slight.Alexa.Framework.Models.Requests;
+using Slight.Alexa.Framework.Models.Requests.RequestTypes;
+
+using Xunit;
+
+namespace Slight.Alexa.Framework.Tests.ModelTests
 {
-    using System.IO;
-
-    using Newtonsoft.Json;
-
-    using Slight.Alexa.Framework.Models.Requests;
-    using Slight.Alexa.Framework.Models.Requests.RequestTypes;
-
-    using Xunit;
-
     public class RequestTests
     {
         private const string ExamplesPath = @"ModelTests\Examples\";

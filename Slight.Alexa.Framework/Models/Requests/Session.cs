@@ -1,9 +1,9 @@
+using System.Collections.Generic;
+
+using JetBrains.Annotations;
+
 namespace Slight.Alexa.Framework.Models.Requests
 {
-    using System.Collections.Generic;
-
-    using JetBrains.Annotations;
-
     public class Session
     {
         /// <summary>

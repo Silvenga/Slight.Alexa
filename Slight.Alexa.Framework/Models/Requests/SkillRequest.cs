@@ -1,9 +1,9 @@
-﻿namespace Slight.Alexa.Framework.Models.Requests
+﻿using System;
+
+using Slight.Alexa.Framework.Models.Requests.RequestTypes;
+
+namespace Slight.Alexa.Framework.Models.Requests
 {
-    using System;
-
-    using Slight.Alexa.Framework.Models.Requests.RequestTypes;
-
     public class SkillRequest
     {
         /// <summary>

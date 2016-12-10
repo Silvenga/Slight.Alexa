@@ -1,7 +1,7 @@
-﻿namespace Slight.Alexa.Framework.Models.Requests.RequestTypes
-{
-    using System;
+﻿using System;
 
+namespace Slight.Alexa.Framework.Models.Requests.RequestTypes
+{
     public class RequestBundle : IIntentRequest, ILaunchRequest, ISessionEndedRequest
     {
         /// <summary>

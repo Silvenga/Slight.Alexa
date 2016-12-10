@@ -1,7 +1,7 @@
+using System.Collections.Generic;
+
 namespace Slight.Alexa.Framework.Models.Requests
 {
-    using System.Collections.Generic;
-
     public class Intent
     {
         /// <summary>

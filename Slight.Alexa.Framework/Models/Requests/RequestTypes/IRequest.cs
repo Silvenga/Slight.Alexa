@@ -1,7 +1,7 @@
+using System;
+
 namespace Slight.Alexa.Framework.Models.Requests.RequestTypes
 {
-    using System;
-
     public interface IRequest
     {
         /// <summary>

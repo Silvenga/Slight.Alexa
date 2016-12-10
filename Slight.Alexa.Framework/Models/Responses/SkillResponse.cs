@@ -1,8 +1,8 @@
-﻿namespace Slight.Alexa.Framework.Models.Responses
-{
-    using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
+namespace Slight.Alexa.Framework.Models.Responses
+{
     public class SkillResponse
     {
         /// <summary>

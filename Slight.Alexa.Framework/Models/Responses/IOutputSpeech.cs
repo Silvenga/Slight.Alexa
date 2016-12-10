@@ -1,7 +1,7 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace Slight.Alexa.Framework.Models.Responses
 {
-    using System.ComponentModel.DataAnnotations;
-
     public interface IOutputSpeech
     {
         /// <summary>

@@ -1,16 +1,16 @@
-﻿namespace Slight.Alexa.Framework.Tests.ModelTests
+﻿using System.Collections.Generic;
+using System.IO;
+using System.Text.RegularExpressions;
+
+using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
+
+using Slight.Alexa.Framework.Models.Responses;
+
+using Xunit;
+
+namespace Slight.Alexa.Framework.Tests.ModelTests
 {
-    using System.Collections.Generic;
-    using System.IO;
-    using System.Text.RegularExpressions;
-
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Serialization;
-
-    using Slight.Alexa.Framework.Models.Responses;
-
-    using Xunit;
-
     public class ResponseTests
     {
         private const string ExamplesPath = @"ModelTests\Examples\";

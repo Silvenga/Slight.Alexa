@@ -9,7 +9,10 @@
         ///   that the user can use to link their Alexa account with a user in 
         ///   another system. 
         /// </summary>
-        public string Type { get { return "Simple"; } }
+        public string Type
+        {
+            get { return "Simple"; }
+        }
 
         /// <summary>
         /// A string containing the title of the card. 

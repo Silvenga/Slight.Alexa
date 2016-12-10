@@ -27,6 +27,5 @@ namespace Slight.Alexa.Framework.Models.Types
         /// Common Utterances: stop, off, shut up
         /// </summary>
         public const string Stop = "AMAZON.StopIntent";
-
     }
 }

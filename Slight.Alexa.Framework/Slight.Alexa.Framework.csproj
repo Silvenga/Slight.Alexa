@@ -45,33 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\Requests\Application.cs" />
-    <Compile Include="Models\Types\BuiltInIntent.cs" />
-    <Compile Include="Models\Types\BuiltInSlotType.cs" />
-    <Compile Include="Models\Requests\RequestTypes\IIntentRequest.cs" />
-    <Compile Include="Models\Requests\RequestTypes\ILaunchRequest.cs" />
-    <Compile Include="Models\Requests\Intent.cs" />
-    <Compile Include="Models\Requests\RequestTypes\IRequest.cs" />
-    <Compile Include="Models\Requests\RequestTypes\RequestBundle.cs" />
-    <Compile Include="Models\Requests\RequestTypes\ISessionEndedRequest.cs" />
-    <Compile Include="Models\Requests\Slot.cs" />
-    <Compile Include="Models\Requests\Session.cs" />
-    <Compile Include="Models\Requests\SkillRequest.cs" />
-    <Compile Include="Models\Requests\User.cs" />
-    <Compile Include="Models\Responses\IOutputSpeech.cs" />
-    <Compile Include="Models\Responses\LinkAccountCard.cs" />
-    <Compile Include="Models\Responses\ICard.cs" />
-    <Compile Include="Models\Responses\OutputSpeech.cs" />
-    <Compile Include="Models\Responses\Reprompt.cs" />
-    <Compile Include="Models\Responses\Response.cs" />
-    <Compile Include="Models\Responses\SimpleCard.cs" />
-    <Compile Include="Models\Responses\SkillResponse.cs" />
-    <Compile Include="Models\Responses\SsmlOutputSpeech.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <Import Project="..\Shared Code\Shared Code.projitems" Label="Shared" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

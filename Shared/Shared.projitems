@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>bedcf7de-8146-4187-afec-8b93ef15b6d6</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" />
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Requests\Application.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Requests\Intent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Requests\RequestTypes\IIntentRequest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Requests\RequestTypes\ILaunchRequest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Requests\RequestTypes\IRequest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Requests\RequestTypes\ISessionEndedRequest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Requests\RequestTypes\RequestBundle.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Requests\Session.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Requests\SkillRequest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Requests\Slot.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Requests\User.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Responses\ICard.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Responses\IOutputSpeech.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Responses\LinkAccountCard.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Responses\OutputSpeech.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Responses\Reprompt.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Responses\Response.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Responses\SimpleCard.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Responses\SkillResponse.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Responses\SsmlOutputSpeech.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Types\BuiltInIntent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Types\BuiltInSlotType.cs" />
+  </ItemGroup>
+</Project>

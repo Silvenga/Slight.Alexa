@@ -20,6 +20,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Models\Requests\User.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Responses\ICard.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Responses\IOutputSpeech.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Responses\IResponse.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Responses\LinkAccountCard.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Responses\OutputSpeech.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Responses\Reprompt.cs" />

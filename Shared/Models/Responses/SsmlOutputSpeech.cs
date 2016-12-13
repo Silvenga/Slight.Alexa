@@ -1,5 +1,4 @@
 using Newtonsoft.Json;
-using System.ComponentModel.DataAnnotations;
 
 namespace Slight.Alexa.Framework.Models.Responses
 {

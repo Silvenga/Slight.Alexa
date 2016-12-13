@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-using JetBrains.Annotations;
+using Newtonsoft.Json;
 
 namespace Slight.Alexa.Framework.Models.Requests
 {
@@ -10,6 +10,7 @@ namespace Slight.Alexa.Framework.Models.Requests
         /// A boolean value indicating whether this is a new session. 
         /// </summary>
         /// <returns>True for a new session or false for an existing session.</returns>
+        [JsonProperty("new")]
         public bool New { get; set; }
 
         /// <summary>
@@ -18,7 +19,7 @@ namespace Slight.Alexa.Framework.Models.Requests
         /// for a user and session. If the session ends for a user, then a new 
         /// unique sessionId value is provided for subsequent requests for the same user.
         /// </summary>
-        [NotNull]
+        [JsonProperty("sessionId")]
         public string SessionId { get; set; }
 
         /// <summary>
@@ -30,19 +31,19 @@ namespace Slight.Alexa.Framework.Models.Requests
         /// The key is a string that represents the name of the attribute.
         /// The value is an object that represents the value of the attribute.
         /// </returns>
-        [NotNull]
+        [JsonProperty("attributes")]
         public Dictionary<string, object> Attributes { get; set; }
 
         /// <summary>
         /// An object containing an application ID. 
         /// </summary>
-        [NotNull]
+        [JsonProperty("application")]
         public Application Application { get; set; }
 
         /// <summary>
         /// An object that describes the user making the request.
         /// </summary>
-        [NotNull]
+        [JsonProperty("user")]
         public User User { get; set; }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 
 namespace Slight.Alexa.Framework.Models.Requests.RequestTypes
 {
@@ -8,11 +9,13 @@ namespace Slight.Alexa.Framework.Models.Requests.RequestTypes
         /// Describes the request type with the value as:
         /// LaunchRequest, IntentRequest, or SessionEndedRequest
         /// </summary>
+        [JsonProperty("type")]
         public string Type { get; set; }
 
         /// <summary>
         /// Represents a unique identifier for the specific request.
         /// </summary>
+        [JsonProperty("requestId")]
         public string RequestId { get; set; }
 
         /// <summary>
@@ -21,11 +24,13 @@ namespace Slight.Alexa.Framework.Models.Requests.RequestTypes
         /// part of a “replay” attack. Timestamp is provided as an 
         /// ISO 8601 formatted string (for example, 2015-05-13T12:34:56Z).
         /// </summary>
+        [JsonProperty("timestamp")]
         public DateTime Timestamp { get; set; }
 
         /// <summary>
         /// An object that represents what the user wants.
         /// </summary>
+        [JsonProperty("intent")]
         public Intent Intent { get; set; }
 
         /// <summary>
@@ -37,6 +42,7 @@ namespace Slight.Alexa.Framework.Models.Requests.RequestTypes
         ///   responded with an utterance that did not match any of the intents 
         ///   defined in your voice interface.
         /// </summary>
+        [JsonProperty("reason")]
         public string Reason { get; set; }
 
         public Type GetRequestType()

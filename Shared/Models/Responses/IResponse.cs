@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Text;
+﻿using Newtonsoft.Json;
 
 namespace Slight.Alexa.Framework.Models.Responses
 {
     public interface IResponse
     {
-        [Required]
+        [JsonRequired]
         string Type { get; }
     }
 }

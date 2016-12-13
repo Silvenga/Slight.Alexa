@@ -6,8 +6,6 @@
   "description": "A set of managed C# models and helpers to integrate Amazon's Alexa skill services into your .NET Core stack.",
 
   "dependencies": {
-    "CoreCompat.System.ComponentModel.DataAnnotations": "4.2.3-r7",
-    "JetBrains.Annotations": "10.2.1",
     "NETStandard.Library": "1.6.0",
     "Newtonsoft.Json": "9.0.2-beta1"
   },

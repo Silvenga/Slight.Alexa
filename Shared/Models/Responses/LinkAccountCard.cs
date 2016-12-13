@@ -1,4 +1,6 @@
-﻿namespace Slight.Alexa.Framework.Models.Responses
+﻿using Newtonsoft.Json;
+
+namespace Slight.Alexa.Framework.Models.Responses
 {
     public class LinkAccountCard : ICard
     {
@@ -9,6 +11,7 @@
         ///   that the user can use to link their Alexa account with a user in 
         ///   another system. 
         /// </summary>
+        [JsonProperty("type")]
         public string Type
         {
             get { return "LinkAccount"; }

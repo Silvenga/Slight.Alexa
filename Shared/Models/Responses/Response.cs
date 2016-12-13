@@ -1,15 +1,19 @@
-﻿namespace Slight.Alexa.Framework.Models.Responses
+﻿using Newtonsoft.Json;
+
+namespace Slight.Alexa.Framework.Models.Responses
 {
     public class Response
     {
         /// <summary>
         /// The object containing the speech to render to the user
         /// </summary>
+        [JsonProperty("outputSpeech", NullValueHandling = NullValueHandling.Ignore)]
         public IOutputSpeech OutputSpeech { get; set; }
 
         /// <summary>
         /// The object containing a card to render to the Amazon Alexa App. 
         /// </summary>
+        [JsonProperty("card", NullValueHandling = NullValueHandling.Ignore)]
         public ICard Card { get; set; }
 
         /// <summary>
@@ -22,12 +26,14 @@
         /// 
         /// If this is not set, the user is not re-prompted.
         /// </summary>
+        [JsonProperty("reprompt", NullValueHandling = NullValueHandling.Ignore)]
         public Reprompt Reprompt { get; set; }
 
         /// <summary>
         /// A boolean value with true meaning that the session should end, 
         /// or false if the session should remain active.
         /// </summary>
+        [JsonProperty("shouldEndSession", NullValueHandling = NullValueHandling.Ignore)]
         public bool ShouldEndSession { get; set; }
     }
 }

@@ -1,4 +1,4 @@
-using System.ComponentModel.DataAnnotations;
+using Newtonsoft.Json;
 
 namespace Slight.Alexa.Framework.Models.Responses
 {
@@ -9,6 +9,8 @@ namespace Slight.Alexa.Framework.Models.Responses
         /// - "PlainText" - Indicates that the output speech is defined as plain text.
         /// - "SSML" - Indicates that the output speech is text marked up with SSML.
         /// </summary>
+        [JsonProperty("type")]
+        [JsonRequired]
         public string Type
         {
             get { return "PlainText"; }
@@ -17,7 +19,8 @@ namespace Slight.Alexa.Framework.Models.Responses
         /// <summary>
         /// A string containing the speech to render to the user. Use this when type is "PlainText"
         /// </summary>
-        [Required]
+        [JsonRequired]
+        [JsonProperty("text")]
         public string Text { get; set; }
     }
 }

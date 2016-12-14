@@ -1,8 +1,8 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Newtonsoft.Json;
 
 namespace Slight.Alexa.Framework.Models.Responses
 {
-    public interface ICard
+    public class LinkAccountCard : ICard
     {
         /// <summary>
         /// A string describing the type of card to render. Valid types are:
@@ -11,7 +11,10 @@ namespace Slight.Alexa.Framework.Models.Responses
         ///   that the user can use to link their Alexa account with a user in 
         ///   another system. 
         /// </summary>
-        [Required]
-        string Type { get; }
+        [JsonProperty("type")]
+        public string Type
+        {
+            get { return "LinkAccount"; }
+        }
     }
 }

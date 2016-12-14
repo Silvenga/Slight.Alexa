@@ -1,0 +1,37 @@
+{
+  "name": "Slight.Alexa.Core",
+  "title": "Slight.Alexa.Core",
+  "version": "1.0.10-beta",
+  "authors": [ "Silvenga" ],
+  "description": "A set of managed C# models and helpers to integrate Amazon's Alexa skill services into your .NET Core stack.",
+
+  "dependencies": {
+    "NETStandard.Library": "1.6.0",
+    "Newtonsoft.Json": "9.0.1"
+  },
+
+  "buildOptions": {
+    "compile": [
+      "../Shared/**/*.cs"
+    ]
+  },
+
+  "frameworks": {
+    "netstandard1.6": {
+      "imports": "dnxcore50"
+    }
+  },
+
+  "packOptions": {
+    "summary": "A set of managed C# models and helpers to integrate Amazon's Alexa skill services into your .NET Core stack.",
+    "licenseUrl": "https://github.com/Silvenga/Slight.Alexa/blob/master/LICENSE",
+    "projectUrl": "https://github.com/Silvenga/Slight.Alexa",
+
+    "owners": [
+      "Silvenga"
+    ],
+    "repository": { "url": "https://github.com/Silvenga/Slight.Alexa" },
+    "requireLicenseAcceptance": false,
+    "tags": [ "amazon", "alexa", "echo" ]
+  }
+}

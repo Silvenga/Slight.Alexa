@@ -1,3 +1,5 @@
+using Newtonsoft.Json;
+
 namespace Slight.Alexa.Framework.Models.Requests
 {
     public class Slot
@@ -5,6 +7,7 @@ namespace Slight.Alexa.Framework.Models.Requests
         /// <summary>
         /// A string that represents the name of the slot.
         /// </summary>
+        [JsonProperty("name")]
         public string Name { get; set; }
 
         /// <summary>
@@ -12,6 +15,7 @@ namespace Slight.Alexa.Framework.Models.Requests
         /// 
         /// Note that AMAZON.LITERAL slot values sent to your service are always in all lower case.
         /// </summary>
+        [JsonProperty("value")]
         public string Value { get; set; }
     }
 }

@@ -1,4 +1,6 @@
-﻿namespace Slight.Alexa.Framework.Models.Responses
+﻿using Newtonsoft.Json;
+
+namespace Slight.Alexa.Framework.Models.Responses
 {
     public class SimpleCard : ICard
     {
@@ -9,6 +11,7 @@
         ///   that the user can use to link their Alexa account with a user in 
         ///   another system. 
         /// </summary>
+        [JsonProperty("type", NullValueHandling = NullValueHandling.Ignore)]
         public string Type
         {
             get { return "Simple"; }
@@ -17,6 +20,7 @@
         /// <summary>
         /// A string containing the title of the card. 
         /// </summary>
+        [JsonProperty("title", NullValueHandling = NullValueHandling.Ignore)]
         public string Title { get; set; }
 
         /// <summary>
@@ -25,6 +29,7 @@
         /// Note that you can include line breaks in the content for a card of type "Simple". 
         /// Use either “\r\n” or “\n” within the text of the card to insert line breaks.
         /// </summary>
+        [JsonProperty("content", NullValueHandling = NullValueHandling.Ignore)]
         public string Content { get; set; }
     }
 }

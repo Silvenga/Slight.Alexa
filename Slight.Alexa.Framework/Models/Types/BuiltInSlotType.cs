@@ -10,20 +10,20 @@ namespace Slight.Alexa.Framework.Models.Types
         public const string Number = "AMAZON.NUMBER";
 
         /// <summary>
-        /// Converts words that indicate dates (“today”, “tomorrow”, or “july”)
-        /// into a date format (such as “2015-07-00T9”).
+        /// Converts words that indicate dates ("today", "tomorrow", or "july")
+        /// into a date format (such as "2015-07-00T9").
         /// </summary>
         public const string Date = "AMAZON.DATE";
 
         /// <summary>
-        /// Converts words that indicate time (“four in the morning”, “two p m”)
-        /// into a time value (“04:00”, “14:00”).
+        /// Converts words that indicate time ("four in the morning", "two p m")
+        /// into a time value ("04:00", "14:00").
         /// </summary>
         public const string Time = "AMAZON.TIME";
 
         /// <summary>
-        /// Converts words that indicate durations (“five minutes”) 
-        /// into a numeric duration (“5M”).
+        /// Converts words that indicate durations ("five minutes") 
+        /// into a numeric duration ("5M").
         /// </summary>
         public const string Duration = "AMAZON.DURATION";
 

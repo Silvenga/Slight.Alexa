@@ -18,7 +18,7 @@ namespace Slight.Alexa.Framework.Models.Requests.RequestTypes
         /// <summary>
         /// Provides the date and time when Alexa sent the request. 
         /// Use this to verify that the request is current and not 
-        /// part of a “replay” attack. Timestamp is provided as an 
+        /// part of a "replay" attack. Timestamp is provided as an 
         /// ISO 8601 formatted string (for example, 2015-05-13T12:34:56Z).
         /// </summary>
         public DateTime Timestamp { get; set; }

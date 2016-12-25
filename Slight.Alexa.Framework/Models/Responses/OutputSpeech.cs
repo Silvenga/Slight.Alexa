@@ -9,10 +9,7 @@ namespace Slight.Alexa.Framework.Models.Responses
         /// - "PlainText" - Indicates that the output speech is defined as plain text.
         /// - "SSML" - Indicates that the output speech is text marked up with SSML.
         /// </summary>
-        public string Type
-        {
-            get { return "PlainText"; }
-        }
+        public string Type => "PlainText";
 
         /// <summary>
         /// A string containing the speech to render to the user. Use this when type is "PlainText"

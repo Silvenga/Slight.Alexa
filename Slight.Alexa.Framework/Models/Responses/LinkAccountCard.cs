@@ -9,9 +9,6 @@
         ///   that the user can use to link their Alexa account with a user in 
         ///   another system. 
         /// </summary>
-        public string Type
-        {
-            get { return "LinkAccount"; }
-        }
+        public string Type => "LinkAccount";
     }
 }

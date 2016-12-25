@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Slight.Alexa.Framework.Models.Responses
 {
-    class SsmlOutputSpeech : IOutputSpeech
+    public class SsmlOutputSpeech : IOutputSpeech
     {
         /// <summary>
         /// A string containing the type of output speech to render. Valid types are:
@@ -10,10 +10,7 @@ namespace Slight.Alexa.Framework.Models.Responses
         /// - "SSML" - Indicates that the output speech is text marked up with SSML.
         /// </summary>
         [Required]
-        public string Type
-        {
-            get { return "SSML"; }
-        }
+        public string Type => "SSML";
 
         /// <summary>
         /// A string containing text marked up with SSML to render to the user. Use this when type is "SSML"

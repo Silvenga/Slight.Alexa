@@ -1,0 +1,47 @@
+﻿{
+  "title": "Slight.Alexa",
+  "description": "A set of managed C# models and helpers to integrate Amazon's Alexa skill services into your .Net stack.",
+  "authors": [
+    "Silvenga"
+  ],
+  "owners": [
+    "Silvenga"
+  ],
+  "packOptions": {
+    "projectUrl": "https://github.com/Silvenga/Slight.Alexa",
+    "tags": [ "Alaxa", "Amazon", "Echo" ],
+    "licenseUrl": "https://github.com/Silvenga/Slight.Alexa/blob/master/LICENSE",
+    "files": {
+      "mappings": {
+        "lib\\dotstandard12": {
+          "include": [
+            "bin/**/Slight.Alexa.Framework.dll"
+          ]
+        },
+        "lib\\net45": {
+          "include": [
+            "bin/**/Slight.Alexa.Framework.dll"
+          ]
+        }
+      }
+    }
+  },
+  "copyright": "Copyright 2016",
+  "releaseNotes": "First Release.",
+  "requireLicenseAcceptance": false,
+  "supports": {},
+  "frameworks": {
+    "netstandard1.2": {
+      "dependencies": {
+        "Microsoft.NETCore.Portable.Compatibility": "1.0.1",
+        "NETStandard.Library": "1.6.0",
+        "System.ComponentModel.Annotations": "4.3.0"
+      }
+    },
+    "net45": {
+      "frameworkAssemblies": {
+        "System.ComponentModel.DataAnnotations": ""
+      }
+    }
+  }
+}

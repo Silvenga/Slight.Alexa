@@ -1,5 +1,7 @@
 ![Slight.Alexa](docs/images/icon.png)
 
+> Being that I don't work with Alexa anymore, this project is deprecated in favor of [alexa-skills-dotnet](https://github.com/timheuer/alexa-skills-dotnet), in which the base API models were based.
+
 # Slight.Alexa
 
 [![Nuget Package](https://img.shields.io/nuget/v/Slight.Alexa.svg?maxAge=2592000&style=flat-square)](https://www.nuget.org/packages/Slight.Alexa/)
